@@ -1,0 +1,55 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: slategray;
+}
+
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    width: 400px;
+    justify-content: center;
+    margin: auto;
+}
+
+button {
+    font-size: 16px;
+    border: none;
+    padding: 5px;
+    color: whitesmoke;
+
+}
+
+#mybutton {
+    background-color: slateblue;
+    padding: 15px;
+}
+
+.page input {
+    padding: 10px;
+    border: solid 2px slateblue;
+}
+
+#mytask {
+    font-size: 18px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
+
+#mytaskText {
+    margin-left: 25px;
+    color: slategray;
+}
+
+#mytaskDelete {
+    background-color: darkseagreen;
+    font-size: 16px;
+    width: 80px;
+}
