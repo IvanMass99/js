@@ -27,7 +27,7 @@ mytaskDelete.id = 'mytaskDelete'
 
 mytaskText.textContent = myinput.value
 myinput.value = ''
-mytaskDelete.innerHTML = '<i class="fas fa-check"></i>'; // Ícono de check
+mytaskDelete.innerHTML = '<i class="fas fa-check"></i>';
 
 
 // Eliminar tarea
@@ -44,3 +44,21 @@ mytaskDelete.onclick = () => {
 };
 
 }
+
+// Crear tarea el boton
+
+mybutton.onclick = () => {
+    if (myinput.value != '') {createTask()}
+};
+  
+
+// Crear tarea al presionar la tecla enter
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter' && myinput.value != '') {
+      createTask()
+    }
+  });
+  
+
+
